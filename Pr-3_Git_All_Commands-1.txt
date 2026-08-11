@@ -1,0 +1,111 @@
+PR-3: IMPLEMENT GITHUB OPERATIONS USING GIT
+ALL COMMANDS - SIMPLE PRACTICAL SEQUENCE
+
+1. CLONE A REPOSITORY
+
+git clone https://github.com/username/Gitdemo.git
+
+cd Gitdemo
+
+pwd
+
+ls
+
+
+2. CHECK BRANCH
+
+git branch
+
+
+3. CREATE A NEW BRANCH
+
+git checkout -b feature
+
+git branch
+
+
+4. CREATE A FILE
+
+echo "<h1> welcome to my git project</>" > index.html
+
+ls
+
+
+5. CHECK STATUS
+
+git status
+
+
+6. ADD FILE
+
+git add index.html
+
+OR
+
+git add .
+
+
+7. COMMIT CHANGES
+
+git commit -m "added index.html file"
+
+
+8. VIEW COMMIT HISTORY
+
+git log
+
+
+9. PUSH NEW BRANCH TO GITHUB
+
+git push -u origin feature
+
+
+10. PUSH FUTURE CHANGES
+
+git push
+
+
+11. SWITCH TO MAIN BRANCH
+
+git checkout main
+
+
+12. CHECK BRANCHES
+
+git branch
+
+
+13. PULL CHANGES FROM GITHUB
+
+git pull origin main
+
+
+14. CHECK STATUS AGAIN
+
+git status
+
+
+15. VIEW LOG AGAIN
+
+git log
+
+
+QUICK EXAM SEQUENCE
+
+git clone URL
+cd Gitdemo
+ls
+git branch
+git checkout -b feature
+git branch
+echo "<h1> welcome to my git project</>" > index.html
+ls
+git status
+git add .
+git commit -m "added index.html file"
+git log
+git push -u origin feature
+git checkout main
+git pull origin main
+git status
+git log
