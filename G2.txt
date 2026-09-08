@@ -1,0 +1,79 @@
+# STEP 1: Check Git installation
+git --version
+
+
+# STEP 2: Configure Git (One-time setup)
+git config --global user.name "Your Name"
+git config --global user.email "your_email@example.com"
+
+# Check configuration
+git config --list
+
+
+# STEP 3: Create project folder
+mkdir vcs-demo
+cd vcs-demo
+
+# Create a file
+echo "Hello, Version Control!" > file1.txt
+
+
+# STEP 4: Initialize Git repository
+git init
+
+
+# STEP 5: Check status
+git status
+
+# Add file to staging area
+git add file1.txt
+
+
+# STEP 6: First commit
+git commit -m "First commit - added file1.txt"
+
+
+# STEP 7: Modify file
+echo "Adding second line to file1" >> file1.txt
+
+# Check changes
+git status
+git diff
+
+# Add and commit changes
+git add file1.txt
+git commit -m "Updated file1 with second line"
+
+
+# STEP 8: View commit history
+git log
+
+# Short history
+git log --oneline
+
+
+# STEP 9: Create and switch to new branch
+git branch new-feature
+git checkout new-feature
+
+
+# STEP 10: Make changes in feature branch
+echo "Feature branch update" >> feature.txt
+
+git add feature.txt
+git commit -m "Added feature.txt in new-feature branch"
+
+
+# STEP 11: Switch back to master
+git checkout master
+
+# Merge feature branch
+git merge new-feature
+
+
+# STEP 12: Push to GitHub
+# First create a repository on GitHub.
+
+git remote add origin https://github.com/yourusername/vcs-demo.git
+
+git push -u origin master
